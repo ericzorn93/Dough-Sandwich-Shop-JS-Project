@@ -1,0 +1,127 @@
+/* ==========================================================================
+   Eric Zorn ICT 4510 10/23/2017
+   ========================================================================== */
+
+
+body {
+    background-color: #191919;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/*Navigation*/
+
+.logo {
+    float: left;
+}
+
+.logo a {
+    color: black;
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+
+header {
+    background: #55d6aa;
+    height: 70px;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    margin-bottom: 20px;
+    padding: 5px;
+    color: black;
+    border: 2px solid black;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:active {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:after {
+    text-decoration: none;
+    color: black;
+}
+
+/*End of Navigation*/
+
+
+.centered {
+    color: white;
+}
+
+/*Slick Slider*/
+.slick-dots li.slick-active button:before {
+    background: #55d6aa;
+}
+
+/*Footer*/
+footer {
+    color: white;
+}

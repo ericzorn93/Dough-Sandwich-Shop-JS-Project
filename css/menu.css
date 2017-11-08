@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Eric Zorn
+   ========================================================================== */
+
+.menu-title {
+    color: white;
+    margin-left: 50%;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#menuList li {
+    list-style-type: decimal;
+    color: white;
+}

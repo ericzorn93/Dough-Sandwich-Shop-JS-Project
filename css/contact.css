@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Eric Zorn
+   ========================================================================== */
+
+
+.contact-title {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+
+form {
+    margin-top: 25px;
+}
+
+form div label {
+    color: white;
+}
+
+form div input:required {
+    border: 2px solid red;
+}
+
+form div textarea:required {
+    border: 2px solid red;
+}
+
+#fullName:focus {
+    background-color: #55d6aa;
+    color: black;
+    font-weight: 800;
+    border-color: white;
+    border-width: 2px;
+}
+
+#email:focus {
+    background-color: #55d6aa;
+    color: black;
+    font-weight: 800;
+    border-color: white;
+    border-width: 2px;
+}
+
+#message:focus {
+    background-color: #55d6aa;
+    color: black;
+    font-weight: 800;
+    border-color: white;
+    border-width: 2px;
+}
+
+#formButton {
+    font-size: 18px;
+    background-color: #55d6aa;
+    color: white;
+    font-weight: 500;
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 100px;
+}
+
+.phpInfo {
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+/*Input Placeholder*/
+input::-webkit-input-placeholder {
+    color: black !important;
+}
+input:-moz-placeholder { /* Firefox 18- */
+    color: black !important;
+}
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: black !important;
+}
+input:-ms-input-placeholder {
+    color: black !important;
+}
+/*Text Area*/
+textarea::-webkit-input-placeholder {
+    color: black !important;
+}
+textarea:-moz-placeholder { /* Firefox 18- */
+    color: black !important;
+}
+textarea::-moz-placeholder {  /* Firefox 19+ */
+    color: black !important;
+}
+textarea:-ms-input-placeholder {
+    color: black !important;
+}
+
+
+/* Map */
+#map {
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+}

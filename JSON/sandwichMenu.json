@@ -1,0 +1,30 @@
+{
+  "menu": {
+    "sandwichNames": [
+        "Hamburger",
+        "Panini",
+        "Bahn Mi",
+        "Lobster Roll",
+        "Cheese Steak",
+        "Po Boy",
+        "French Dip",
+        "Gyro",
+        "Chicken Salad Sandwich",
+        "Hot Dog",
+        "Porchetta"
+      ],
+      "sandwichDescriptions": [
+        "A grilled patty of beef and shortrib between two brioche buns and hand-made mozarella cheese. Served with hand-cut french fries and spciy ketchup.",
+        "Ham, Salami, and Capacola fresh from the deli. All meats are thinly sliced and placed between to flat breads and topped with balsamic glaze. Served with a pickly and coleslaw",
+        "A Vietnamese sandwich consisting of a baguette (traditionally baked with both rice and wheat flour) filled with a variety of ingredients, typically including meat, pickled vegetables, and chili peppers. Served with crispy spring rolls and homemade fish sauce.",
+        "Buttery hot dog rolls filled with fresh chunks of Maine lobster that has been mixed with light mayonaise and spiced. Served with french fries and old-bay mayonaise.",
+        "Thinly sliced rib-eye topped with melted swiss on a french baguette. Served with homemade salt and vinegar chips.",
+        "Coconut shrimp topped with lettuce, tomato and chipotle mayonaise on a brioche bun. Served with homemade potato chips.",
+        "Thinly slices prime rib with a side of au jus topped with cheddar cheese. Served with spicy ketchup and french fries.",
+        "A greek delicacy of shaved lamb meat that has been mixed with many mediterranean spices. Served with Tzadziki sauce and in between grilled pita bread. Served with cucumber and tomato salad.",
+        "Fresh rotissere chicken salad with cranberries and walnuts between white toast with lettuce and tomato. Served with salt and vinegar chips.",
+        "All natural beef hot dog between buttery hot dog roll and topped with sauerkraut with mustard. Served with french fries and spicy ketchup",
+        "(in Italian cooking) suckling pig that has been boned, seasoned with garlic and herbs, and roasted, typically sliced and served as a filling in sandwiches. Served with mozarella and tomato salad."
+      ]
+  }
+}
