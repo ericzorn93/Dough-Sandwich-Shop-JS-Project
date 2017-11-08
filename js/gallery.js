@@ -1,5 +1,15 @@
 /* ==========================================================================
-   Eric Zorn
+   Eric Zorn - ICT 4510
+
+   This is the Gallery page for the Dough Sandwich Shop website. I was able to do many awesome things in this page with JS.
+   First, I obtained an API key and utilized the Flickr API to build an image gallery. Using the loadDoc() function, I utilized
+   an AJAX call to be able to retrieve a JSON information file of the different sandwich images that were located within a public
+   Flickr gallery. The gallery was focused on sandwich images from many different Flickr users. From the API's JSON response,
+   I was able to loop over the array of photos and generate a URL of each individual image. I was able to create these image links
+   from making a function that gets the image URL and then taking the generated URL to create a new image with the proper HTML markup.
+   Once the list of image elements was constructed from the JavaScript file, I was then able to use the Slick library again.
+   I generated another image slide gallery that formed on the image div container. All of these images in the slider were directly
+   from the Flickr library plugin.
    ========================================================================== */
 
 
