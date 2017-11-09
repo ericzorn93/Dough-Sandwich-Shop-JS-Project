@@ -1,5 +1,14 @@
 /* ==========================================================================
-   Eric Zorn
+   Eric Zorn - ICT 4510
+
+   In this script, I am targeting the menu page of the website. I used an AJAX call after creating my own JSON document
+   of the sandwich menu. The JSON document consists of the sandwich titles and the descriptions of each of the sandwiches.
+   I stored the JSON response into the localStorage of the browser. I then was able to take the response from the localStorage
+   and parse the data back to JSON. I looped over the parsed data and generated an ordered list of the sandwich names that are appended to the DOM
+   and the menu div. After this, I then appended individually, each of the different positions of the array that stored each of the sandwich descriptions.
+   These sandwich descriptions were appended as paragraph tags and were all stylized in the CSS, as well as the menu titles. This was again done
+   with a combination of jQuery and Vanilla JavaScript. Most of the DOM manipulation was done with the jQuery. This menu will only populate when all of
+   the HTML elements are loaded and the page is fully loaded as well.
    ========================================================================== */
 
 function loadMenu() {

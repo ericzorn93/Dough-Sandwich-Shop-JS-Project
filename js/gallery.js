@@ -9,7 +9,7 @@
    from making a function that gets the image URL and then taking the generated URL to create a new image with the proper HTML markup.
    Once the list of image elements was constructed from the JavaScript file, I was then able to use the Slick library again.
    I generated another image slide gallery that formed on the image div container. All of these images in the slider were directly
-   from the Flickr library plugin.
+   from the Flickr library plugin. All images come from the gallery titled Sandwich! by Little Grey.
    ========================================================================== */
 
 
