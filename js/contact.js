@@ -1,15 +1,15 @@
 /* ==========================================================================
-   Eric Zorn - ICT 4510
+   Eric Zorn - ICT 4510 (Fall 2017)
 
-   This page is my contact me page for the Dough Sandwich Shop Website. In this page, I was able to take the different user
+   This page is my contact page for the Dough Sandwich Shop Website. In this page, I was able to take the different user
    inputs and obtain the values from the DOM when the user is done typing the input into the form inputs. There are
    three different inputs: Full Name, Email Address, and Enter Message Here (Message). I was able to then send the information with
    an AJAX call to the server and obtain the PHP echo response that responds with a "Thank you for Responding" Message.
    The message from the PHP document can only be rendered if you are running a local server like MAMP on your computer and
-   will appear after the user clicks the submit button in the DOM. I also utilized the jQuery Validate Plugin to the jQuqery library.
-   The library uses many different possible API features. I used the submitHandler property and assigned each of the specific inputs
-   different messages for error responses if the input is not filled in by the users. I also have used subtle CSS reminders for the user
-   on the different inputs for blank fields or incompatible field inputs. After using the jQuery Validate plugin, I reused the
+   will appear after the user clicks the submit button in the DOM. I also utilized the jQuery Validate Plugin to the jQuery library in my code.
+   The library uses many different possible API features. I used the submitHandler property and the message property. With the library's messages property/object,
+   I assigned each of the specific inputs different messages for error responses if the input is not filled in by the user. I also have used subtle CSS reminders for the user
+   on the different inputs for blank fields or incompatible field inputs with CSS pseudo selectors and custom styling. After using the jQuery Validate plugin, I reused the
    Google Maps API to import the same Google Map of the University of Denver and the marker on the map.
    ========================================================================== */
 
@@ -24,6 +24,8 @@ $(document).ready(function () {
 
    if (inputs.fullName.val() === "") {
        inputs.fullName.focus();
+   } else {
+       inputs.email.focus();
    }
 
 
@@ -55,11 +57,11 @@ $(document).ready(function () {
 
 
 
-   //Form Validation with jQuery Validate Library/Plugin
+   //Form Validation with jQuery Validation Library/Plugin
     
     $("#contactForm").validate({
         submitHandler: function (form) {
-
+            console.log("The form is successful!")
         },
         messages: {
             fullName: {

@@ -1,11 +1,14 @@
 /* ==========================================================================
-   Eric Zorn ICT 4510
+   Eric Zorn - ICT 4510 (Fall 2017)
 
    In this JavaScript document, I am rendering the needed JS for the About page of the document.
    I am initializing a Google Map from the Google Maps API for JavaScript. I have generated my own
    API token for this specific project. Once I have done that, inside of the initMap() function, I have gotten the
    ID of the map and filled it with the correct coordinates of the University of Denver and styling from the Google Maps
-   styling page of the Google Maps API. I also placed the marker from the API for the University of Denver.
+   styling page of the Google Maps API. I also have placed the marker from the API for the University of Denver's location.
+   I have pulled in data via an AJAX request from the ip-api JSON website. I wrote that data to the DOM inside of an H3 element.
+   This way, you can see where your location, relative to the University of Denver/Restaurant is. The information is dynamic
+   and will be changing depending on your IP address. All styling is custom and with Bootstrap
    ========================================================================== */
 
 
@@ -106,4 +109,29 @@
      });
  }
 
- document.onload = initMap;
+ 
+function successPosition(pos) {
+    var crd = pos.coords;
+
+    console.log('Your current position is:');
+    console.log(`Latitude : ${crd.latitude}`); //ES6 String Concatenation
+    console.log(`Longitude: ${crd.longitude}`); //ES6 String Concatenation
+}
+
+document.onload = navigator.geolocation.getCurrentPosition(successPosition);
+
+document.onload = initMap;
+
+//Location of Yourself at the Moment
+$.ajax({
+   type: "GET",
+   dataType: "json",
+   url: "http://ip-api.com/json",
+   success: function (responseData) {
+       const location = document.getElementById("location");
+       location.innerHTML = "Your location is: " + responseData["city"] + ", " + responseData["region"] + ", " + responseData["country"] + ", " + responseData["zip"];
+       $("#location").addClass("location");
+
+       console.log("Your location is: " + responseData["city"] + ", " + responseData["region"] + ", " + responseData["country"] + ", " + responseData["zip"]);
+   }
+});

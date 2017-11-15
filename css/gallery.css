@@ -12,3 +12,45 @@ form label {
 .descriptionText {
     color: white;
 }
+
+@media screen and (max-width: 1183px) {
+    header {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    header {
+        height: 330px;
+    }
+    header nav ul {
+        width: 150px;
+        position: absolute;
+        margin-left: -250px;
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        height: 310px;
+    }
+    header nav ul {
+        width: 150px;
+        position: absolute;
+        margin-left: -250px;
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        height: 310px;
+    }
+    header nav ul {
+        width: 150px;
+        position: absolute;
+        margin-left: -220px;
+        padding-top: 80px;
+    }
+}
